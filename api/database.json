@@ -29,7 +29,7 @@
             "type": "Sapphire"
         }
     ],
-    "facilitiesMinerals": [
+    "facilitysMinerals": [
         {
             "id": 1,
             "mineralId": 1,
@@ -59,6 +59,36 @@
             "mineralId": 5,
             "facilityId": 5,
             "mineralQuantity": 5 
+        },
+        {
+            "id": 6,
+            "mineralId": 6,
+            "facilityId": 6,
+            "mineralQuantity": 6 
+        },
+        {
+            "id": 7,
+            "mineralId": 4,
+            "facilityId": 6,
+            "mineralQuantity": 10
+        },
+        {
+            "id": 8,
+            "mineralId": 3,
+            "facilityId": 5,
+            "mineralQuantity": 10 
+        },
+        {
+            "id": 9,
+            "mineralId": 7,
+            "facilityId": 5,
+            "mineralQuantity": 10 
+        },
+        {
+            "id": 10,
+            "mineralId": 1,
+            "facilityId": 3,
+            "mineralQuantity": 10 
         }
         
     ],
@@ -196,27 +226,27 @@
     ],
     "facilities": [
         { 
-            "id": 0,
+            "id": 1,
             "name": "Research Lab" 
             }, 
         { 
-            "id": 1,
+            "id": 2,
             "name": "Mining Station" 
         }, 
         { 
-            "id": 2,
+            "id": 3,
             "name": "Power Plant" 
         }, 
         { 
-            "id": 3,
+            "id": 4,
             "name": "Spaceport" 
         }, 
         { 
-            "id": 4,
+            "id": 5,
             "name": "Agricultural Hub" 
             }, 
         { 
-            "id": 5,
+            "id": 6,
             "name": "Defense Center" 
             }
     ] 
