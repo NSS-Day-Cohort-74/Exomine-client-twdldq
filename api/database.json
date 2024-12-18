@@ -1,4 +1,223 @@
 {
-    "minerals":[],
-    "facilityMinerals": []
+    "minerals":[ 
+        {
+            "id": 1,
+            "type": "Diamond"
+        },
+        {
+            "id": 2,
+            "type": "Gold"
+        },
+        {
+            "id": 3,
+            "type": "Platinum"
+        },
+        {
+            "id": 4,
+            "type": "Quart"
+        },
+        {
+            "id": 5,
+            "type": "Tungsten"
+        },
+        {
+            "id": 6,
+            "type": "Mercury"
+        },
+        {
+            "id": 7,
+            "type": "Saphire"
+        }
+    ],
+    "facilitiesMinerals": [
+        {
+            "id": 1,
+            "mineralId": 1,
+            "mineralfacilityId": 1,
+            "mineralQuantity": 1 
+        },
+        {
+            "id": 2,
+            "mineralId": 2,
+            "mineralfacilityId": 2,
+            "mineralQuantity": 2 
+        },
+        {
+            "id": 3,
+            "mineralId": 3,
+            "mineralfacilityId": 3,
+            "mineralQuantity": 3 
+        },
+        {
+            "id": 4,
+            "mineralId": 4,
+            "mineralfacilityId": 4,
+            "mineralQuantity": 4 
+        },
+        {
+            "id": 5,
+            "mineralId": 5,
+            "mineralfacilityId": 5,
+            "mineralQuantity": 5 
+        }
+        
+    ],
+    "governers": [
+        { 
+            "id": 0, 
+            "colonyId": 0,
+            "active": true 
+        }, 
+        { 
+            "id": 1, 
+            "colonyId": 1, 
+            "active": false 
+        }, 
+        { 
+            "id": 2, 
+            "colonyId": 2, 
+            "active": true }, 
+        { 
+            "id": 3, 
+            "colonyId": 3, 
+            "active": false 
+        }, 
+        { 
+            "id": 4, 
+            "colonyId": 4, 
+            "active": true 
+        }, 
+        { 
+            "id": 5, 
+            "colonyId": 5, 
+            "active": false 
+        }
+    ],
+    "colonies": [
+        { 
+            "id": 0, 
+            "colonyName": "Alpha Prime" 
+            },
+        { 
+            "id": 1, 
+            "colonyName": "Nova Terra" 
+        },
+        { 
+            "id": 2, 
+            "colonyName": "Eden Outpost" 
+        },
+        { 
+            "id": 3, 
+            "colonyName": "Lunar Haven" 
+        },
+        { 
+            "id": 4, 
+            "colonyName": "Stellar Gate" 
+        },
+        { 
+            "id": 5, 
+            "colonyName": "Aurora Colony" 
+        }
+    ],
+    "colonysMinerals": [
+        {
+            "id": 1,
+            "mineralId": 2,
+            "facilityId": 4,
+            "quantinty": 100
+        },
+        {
+            "id": 2,
+            "mineralId": 4,
+            "facilityId": 3,
+            "quantinty": 100
+        },
+        {
+            "id": 3,
+            "mineralId": 5,
+            "facilityId": 2,
+            "quantinty": 100
+        },
+        {
+            "id": 4,
+            "mineralId": 5,
+            "facilityId": 5,
+            "quantinty": 100
+        },
+        {
+            "id": 5,
+            "mineralId": 3,
+            "facilityId": 3,
+            "quantinty": 100
+        },
+        {
+            "id": 6,
+            "mineralId": 2,
+            "facilityId": 5,
+            "quantinty": 100
+        },
+        {
+            "id": 7,
+            "mineralId": 4,
+            "facilityId": 5,
+            "quantinty": 100
+        },
+        {
+            "id": 8,
+            "mineralId": 6,
+            "facilityId": 6,
+            "quantinty": 100
+        },
+        {
+            "id": 9,
+            "mineralId": 1,
+            "facilityId": 0,
+            "quantinty": 100
+        },
+        {
+            "id": 10,
+            "mineralId": 7,
+            "facilityId": 2,
+            "quantinty": 100
+        },
+        {
+            "id": 11,
+            "mineralId": 7,
+            "facilityId": 3,
+            "quantinty": 100
+        },
+        {
+            "id": 12,
+            "mineralId": 5,
+            "facilityId": 3,
+            "quantinty": 100
+        },
+    ],
+    "facilities": [
+        { 
+            "id": 0,
+            "facilityName": "Research Lab" 
+            }, 
+        { 
+            "id": 1,
+            "facilityName": "Mining Station" 
+        }, 
+        { 
+            "id": 2,
+            "facilityName": "Power Plant" 
+        }, 
+        { 
+            "id": 3,
+            "facilityName": "Spaceport" 
+        }, 
+        { 
+            "id": 4,
+            "facilityName": "Agricultural Hub" 
+            }, 
+        { 
+            "id": 5,
+            "facilityName": "Defense Center" 
+            }
+    ] 
+
 }
