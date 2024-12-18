@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #000;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/stardust.png'), radial-gradient(circle at bottom, #0a0a23, #000000);
+    animation: moveStars 20s linear infinite;
+    z-index: -1;
+}
+
+/* Moving Stars Animation */
+@keyframes moveStars {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 1000px 1000px;
+    }
+}
+
+/* Container Styling */
+.container {
+    background: rgba(20, 20, 20, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+    max-width: 800px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+    }
+    to {
+        text-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
+    }
+}
+
+/* Dropdown Controls */
+.dropdown {
+    margin: 1rem 0;
+}
+
+label {
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+select {
+    width: 100%;
+    padding: 0.5rem;
+    background: #111;
+    color: #0ff;
+    border: 2px solid #0ff;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+select:hover {
+    border-color: #f0f;
+    box-shadow: 0 0 10px #f0f;
+    transform: scale(1.05);
+}
+
+/* Minerals and Cart Section */
+.minerals-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.facility-minerals, .space-cart {
+    background: rgba(15, 15, 30, 0.8);
+    padding: 1rem;
+    border-radius: 10px;
+    width: 45%;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Floating Animation for Sections */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Button Styling with Crazy Animations */
+button {
+    background: linear-gradient(45deg, #00f, #0ff, #f0f);
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    outline: none;
+    animation: rotateButton 4s infinite linear;
+}
+
+/* Rotate Button Animation */
+@keyframes rotateButton {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+button:hover {
+    background: linear-gradient(45deg, #f0f, #0ff, #00f);
+    box-shadow: 0 0 20px #f0f;
+    transform: scale(1.1) rotate(10deg);
+}
+
+/* Minerals List Styling */
+.mineral-item {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    background: #222;
+    border: 1px solid #0ff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite alternate;
+}
+
+/* Pulse Animation for Minerals */
+@keyframes pulse {
+    from {
+        box-shadow: 0 0 10px #0ff;
+    }
+    to {
+        box-shadow: 0 0 20px #0ff;
+    }
+}
+
+.mineral-item:hover {
+    background: #0a0a23;
+    transform: scale(1.05);
+}
+
+/* Cart List */
+#cart-list {
+    list-style: none;
+    padding: 0;
+}
+
+#cart-list li {
+    padding: 0.5rem;
+    background: #444;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    animation: colorChange 3s infinite alternate;
+}
+
+/* Color Changing Animation */
+@keyframes colorChange {
+    from {
+        background: #444;
+    }
+    to {
+        background: #0ff;
+    }
+}
