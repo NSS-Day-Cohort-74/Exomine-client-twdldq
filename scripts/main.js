@@ -5,17 +5,19 @@ const container = document.querySelector("#container")
 // make a render html function
 
 const render = async () => {
-
-
-
-
+    // set our html functions to variables 
+    
+    
+    
+    
+    // build html structure
     const html = `
     
     <h1 class="main_header"> Solar System Mining Marketplace </h1>
 
     
     <div class="dropdowns">
-        <div class="governer_dropdown">
+        <div class="governor_dropdown">
         
         </div>
         <div class="facility_dropdown">
@@ -23,11 +25,29 @@ const render = async () => {
         </div>
     </div>
     
-    <div 
+    <div class="colony_minerals">
+
+    </div>
+
+
+
+    <div class="mineral_purchase">
+
+    </div>
     
     
     
+    <div class="space_cart">
     
+        <div class="cart">
+        
+        </div>
+
+        <div class="buy_button">
+        
+        </div>
+
+    </div>
     
     
     
@@ -38,15 +58,13 @@ const render = async () => {
     
     `
 
+    // insert render into container.innerhtml
 
 
 }
-// set our html functions to variables
-
-// build html structure
 
 
-// insert render into container.innerhtml
+
 
 // listen for a change and run the render function
 
