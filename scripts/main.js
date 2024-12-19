@@ -6,10 +6,7 @@ const container = document.querySelector("#container")
 
 const render = async () => {
     // set our html functions to variables 
-    
-    
-    
-    
+
     // build html structure
     const html = `
     
