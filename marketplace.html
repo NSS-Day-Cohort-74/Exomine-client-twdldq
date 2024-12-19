@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>The Marketplace</title>
+    <head>
+      <link rel="icon" href="favicon.png" type="image/png">
+    </head>
+<body class="space-bg">
+    <div class="container">
+        <h1 class="neon-text">Introducing our Solar System Mining Marketplace</h1>
+
+        <h3 class="neon-text">Feel free to explore</h3>
+
+
+        <div class="dropdowns">
+            <div class="dropdown">
+                <label for="governor" class="neon-label">Choose a Governor:</label>
+                <select id="governor" class="neon-select">
+                    <option value="">Choose a Governor...</option>
+                    <option value="earth">Earth Governor</option>
+                    <option value="mars">Mars Governor</option>
+                    <option value="europa">Europa Governor</option>
+                </select>
+            </div>
+
+            <div class="dropdown">
+                <label for="facility" class="neon-label">Choose a Facility:</label>
+                <select id="facility" class="neon-select">
+                    <option value="">Choose a Facility...</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="minerals-section">
+            <div class="facility-minerals">
+                <h2 class="neon-text">Facility Minerals</h2>
+                <div id="minerals-list">
+                </div>
+            </div>
+            <div class="space-cart">
+                <h2 class="neon-text">Space Cart</h2>
+                <ul id="cart-list">
+                </ul>
+                <button id="purchase-btn" class="neon-button" disabled>Purchase Mineral</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
+

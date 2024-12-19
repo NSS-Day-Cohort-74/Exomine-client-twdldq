@@ -1,3 +1,148 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #0d0d0d;
+    color: #fff;
+}
+
+.space-bg {
+    background: black;
+    height: 100vh;
+    background-image: url('https://science.nasa.gov/wp-content/uploads/2023/07/hubble-ugc12295-potw2330a.jpg?w=2048&format=webp');
+    background-size: cover;
+    background-blend-mode: screen;
+    background-position: center;
+    animation: space-move 20s infinite alternate;
+}
+
+@keyframes space-move {
+    from {
+        background-position: top left;
+    }
+    to {
+        background-position: bottom right;
+    }
+}
+/* Fade-In Effect for Container */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.landing-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.neon-text {
+    font-size: 3rem;
+    color: rgb(255, 106, 0);
+    text-shadow: 0 0 10px rgb(167, 0, 36), 0 0 20px rgb(199, 12, 12), 0 0 30px rgb(131, 19, 19);
+}
+
+.bounce {
+    animation: bounce 5s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-25px);
+    }
+}
+
+.subtext {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #e1ff00;
+    text-shadow: 0 0 10px #a4a689;
+}
+
+.neon-button {
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: rgb(0, 255, 255);
+    border: 3px solid rgb(204, 255, 0);
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgb(81, 0, 34);
+    transition: all 0.3s ease;
+}
+
+.neon-button:hover {
+    background-color: #0ff;
+    color: #000;
+    box-shadow: 0 0 20px #0ff;
+    transform: scale(1.1);
+}
+
+@keyframes idle-glow {
+    0%, 100% {
+        box-shadow: 0 0 20px rgb(122, 0, 0);
+    }
+    50% {
+        box-shadow: 0 0 30px #0ff;
+    }
+}
+
+.neon-button {
+    animation: idle-glow 3s infinite;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #0d0d0d;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+
+.landing-container h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.landing-container p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+#enter-btn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #ff9800;
+    color: #0d0d0d;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#enter-btn:hover {
+    background-color: #e68900;
+    transform: scale(1.05);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,42 +150,10 @@
     font-family: 'Orbitron', sans-serif;
 }
 
-body {
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    background: #000;
-    position: relative;
-}
 
-body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('https://www.transparenttextures.com/patterns/stardust.png'), radial-gradient(circle at bottom, #0a0a23, #000000);
-    animation: moveStars 20s linear infinite;
-    z-index: -1;
-}
 
-/* Moving Stars Animation */
-@keyframes moveStars {
-    from {
-        background-position: 0 0;
-    }
-    to {
-        background-position: 1000px 1000px;
-    }
-}
-
-/* Container Styling */
 .container {
-    background: rgba(20, 20, 20, 0.8);
+    background: rgba(33, 86, 73, 0.8);
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
@@ -53,23 +166,23 @@ h1 {
     font-size: 2rem;
     text-transform: uppercase;
     margin-bottom: 1rem;
-    color: #0ff;
-    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
-    animation: glow 2s infinite alternate;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px rgb(221, 0, 250), 0 0 20px rgb(255, 0, 0);
+    animation: glow 4s infinite alternate;
 }
 
 @keyframes glow {
     from {
-        text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+        text-shadow: 0 0 10px rgb(255, 0, 0), 0 0 20px rgb(179, 0, 255);
     }
     to {
-        text-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
+        text-shadow: 0 0 20px rgb(123, 0, 0), 0 0 40px rgb(192, 115, 0);
     }
 }
 
-/* Dropdown Controls */
 .dropdown {
     margin: 1rem 0;
+    grid-auto-flow: initial;
 }
 
 label {
@@ -95,7 +208,6 @@ select:hover {
     transform: scale(1.05);
 }
 
-/* Minerals and Cart Section */
 .minerals-section {
     display: flex;
     justify-content: space-around;
@@ -121,7 +233,6 @@ select:hover {
     }
 }
 
-/* Button Styling with Crazy Animations */
 button {
     background: linear-gradient(45deg, #00f, #0ff, #f0f);
     color: #fff;
@@ -152,7 +263,6 @@ button:hover {
     transform: scale(1.1) rotate(10deg);
 }
 
-/* Minerals List Styling */
 .mineral-item {
     margin: 1rem 0;
     padding: 0.5rem;
@@ -163,7 +273,6 @@ button:hover {
     animation: pulse 2s infinite alternate;
 }
 
-/* Pulse Animation for Minerals */
 @keyframes pulse {
     from {
         box-shadow: 0 0 10px #0ff;
@@ -178,7 +287,6 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* Cart List */
 #cart-list {
     list-style: none;
     padding: 0;
@@ -192,7 +300,6 @@ button:hover {
     animation: colorChange 3s infinite alternate;
 }
 
-/* Color Changing Animation */
 @keyframes colorChange {
     from {
         background: #444;
@@ -201,3 +308,166 @@ button:hover {
         background: #0ff;
     }
 }
+.icon {
+    width: 16px;
+    height: 16px;
+    background: url('favicon.png') no-repeat center center;
+    background-size: contain;
+    display: inline-block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.space-bg {
+    background: black;
+    height: 100vh;
+    background-image: url('https://science.nasa.gov/wp-content/uploads/2023/07/hubble-ugc12295-potw2330a.jpg?w=2048&format=webp');
+    background-size: cover;
+    background-blend-mode: screen;
+    background-position: center;
+    animation: space-move 20s infinite alternate;
+}
+
+@keyframes space-move {
+    from {
+        background-position: top left;
+    }
+    to {
+        background-position: bottom right;
+    }
+}
+
+.landing-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Neon Text for Title */
+.neon-text {
+    font-size: 2.5rem;
+    color: rgb(0, 255, 255);
+    text-shadow: 0 0 10px rgb(0, 255, 255), 0 0 20px rgb(0, 153, 255);
+    margin-bottom: 1rem;
+}
+
+/* Dropdown Styling */
+.dropdown {
+    margin: 1rem 0;
+}
+
+label {
+    font-size: 1.2rem;
+    color: #fff;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+select {
+    width: 100%;
+    padding: 0.7rem;
+    background: #111;
+    color: #0ff;
+    border: 2px solid #0ff;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+select:hover {
+    border-color: #f0f;
+    box-shadow: 0 0 10px #f0f;
+    transform: scale(1.05);
+}
+
+/* Section for Minerals and Cart */
+.minerals-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.facility-minerals,
+.space-cart {
+    background: rgba(15, 15, 30, 0.8);
+    padding: 1rem;
+    border-radius: 10px;
+    width: 45%;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Floating Animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Neon Button with Animation */
+.neon-button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: transparent;
+    color: #0ff;
+    border: 3px solid #0ff;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #0ff;
+    transition: all 0.3s ease;
+    animation: idle-glow 3s infinite;
+}
+
+.neon-button:hover {
+    background-color: #0ff;
+    color: #000;
+    box-shadow: 0 0 20px #0ff;
+    transform: scale(1.1);
+}
+
+.purchase-btn {
+    margin-top: 2rem;
+}
+
+.bounce {
+    animation: bounce 5s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
