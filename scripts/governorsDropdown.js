@@ -10,7 +10,7 @@ export async function governorHTML() {
   const governorHTML = data
     .map((gov) => `<option value="${gov.colony.id}">${gov.name}</option>`)
     .join("");
-
+    
   document.addEventListener("change", async (event) => {
     if (event.target.id === "governorsDropdown") {
       const colonyId = event.target.value;

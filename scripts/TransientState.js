@@ -4,6 +4,9 @@ const state = {
     "facilityId": 0,
 }
 
+// create new state object responsible for 
+
+
 export const setFacility = (facilityId) => {
     state.selectedFacility = facilityId
     document.dispatchEvent(new CustomEvent("stateChanged"))
